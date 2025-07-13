@@ -1,0 +1,29 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "Regression": "npx playwright test",
+    "Smoke": "npx playwright test --config=playwright.browser.js --project=chromium --grep=@smoke",
+    "Java Script Order E2E": "npx playwright test OrderPage.test.js",
+    "Type Script Order E2E": "npx playwright test OrderPage_ts.test.ts",
+    "clean:allure": "rimraf allure-report allure-results",
+    "test": "npx playwright test",
+    "report:allure": "npx allure generate allure-results -o allure-report && npx allure open allure-report",
+    "report:playwright": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.4",
+    "allure-playwright": "^3.3.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.3.0"
+  }
+}
