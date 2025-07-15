@@ -28,7 +28,7 @@ page.pause();
 
 
 
-test.only('Handle new window opened by clicking #windowsBtn', async ({ page, context }) => {
+//test('Handle new window opened by clicking #windowsBtn', async ({ page, context }) => {
   
   await page.goto('https://aravind228.github.io/My-own-web-applications/');
 
@@ -50,16 +50,6 @@ test.only('Handle new window opened by clicking #windowsBtn', async ({ page, con
   
 });
 
-
-test.only('Handle new window opened by clicking #windowsBtn', async ({ page, context }) => {
-  
-  await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
-
- 
-  
-
-  
-});
 
 
 
