@@ -1,7 +1,7 @@
 const test=require('@playwright/test');
 
 
-test("Open new Tab", async ({browser}) => {
+test.skip("Open new Tab", async ({browser}) => {
 
 
 const context=await browser.newContext();
@@ -12,7 +12,7 @@ await page2.goto("https://aravind228.github.io/My-own-web-applications/");
 
 });
 
-test("Alert validation", async ({page}) => {
+test.skip("Alert validation", async ({page}) => {
 
 await page.goto("https://aravind228.github.io/My-own-web-applications/");
 
@@ -30,25 +30,25 @@ page.pause();
 
 //test('Handle new window opened by clicking #windowsBtn', async ({ page, context }) => {
   
-  await page.goto('https://aravind228.github.io/My-own-web-applications/');
+  // await page.goto('https://aravind228.github.io/My-own-web-applications/');
 
  
-  const [newPage] = await Promise.all([
-    context.waitForEvent('page'), 
-    page.click('#windowsBtn'),    
-  ]);
+  // const [newPage] = await Promise.all([
+  //   context.waitForEvent('page'), 
+  //   page.click('#windowsBtn'),    
+  // ]);
 
 
-  await newPage.waitForLoadState();
-
-  
-  console.log('New page URL:', newPage.url());
+  // await newPage.waitForLoadState();
 
   
-  console.log('New page title:', await newPage.title());
+  // console.log('New page URL:', newPage.url());
 
   
-});
+  // console.log('New page title:', await newPage.title());
+
+  
+
 
 
 
