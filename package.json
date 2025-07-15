@@ -10,7 +10,7 @@
     "clean:allure": "rimraf allure-report allure-results",
     "test": "npx playwright test",
     "report:allure": "npx allure generate allure-results -o allure-report && npx allure open allure-report",
-    "report:playwright": "npx playwright show-report"
+    "report:playwright": "npx playwright show-report",
     "test:html": "npx playwright test --reporter=html"
   },
   "keywords": [],
